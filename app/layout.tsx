@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import LoadingWidget from "components/common/LoadingWidget"
 import PreviewBar from "components/common/PreviewBar"
 import SiteFooter from "components/common/SiteFooter"
@@ -39,6 +40,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
 						</div>
 					)}
 				</div>
+				<SpeedInsights />
 			</body>
 		</html>
 	)
